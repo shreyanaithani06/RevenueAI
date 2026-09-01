@@ -1,0 +1,148 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Global Reset & Slate-Blue Light Background */
+html, body {
+  font-size: 14px;
+  background-color: #f1f5f9 !important; /* Soft Slate-Blue Light Tone */
+  color: #0f172a !important; /* High contrast dark text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a !important;
+}
+
+.text-muted, .text-secondary {
+  color: #64748b !important; /* Clean slate gray for secondary labels */
+}
+
+/* Card Styling: Clean White with Subtle Borders */
+.card {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8px;
+}
+
+/* Light Table Overrides */
+.table {
+  color: #1e293b !important;
+}
+
+.table th {
+  background-color: #f8fafc !important;
+  color: #475569 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.table td {
+  border-bottom: 1px solid #f1f5f9 !important;
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #f8fafc !important;
+}
+
+/* Input Fields & Controls */
+.form-control, .form-select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out !important;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04) !important;
+  border-color: #cbd5e1 !important;
+}
+
+
+.btn-primary {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+/* Live Pulse Ring */
+.live-pulse {
+  width: 9px;
+  height: 9px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-ring 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Smooth Table Row Entrance */
+tbody tr {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+tbody tr:hover {
+  background-color: #f8fafc !important;
+  transform: scale(1.002);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Click Scale Effect */
+.btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn:active {
+  transform: scale(0.97) !important;
+}
