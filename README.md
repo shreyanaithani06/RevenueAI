@@ -22,7 +22,7 @@ A full-stack intelligent revenue recovery and payment management system designed
 └────────────────┘     JSON Data       └────────────────┘       SQL Queries      └────────────────┘
 
 ```
-
+---
 ## 📂 Project Structure
 
 ```text
@@ -39,7 +39,7 @@ revenueai/
 ├── database.sql          # Database initialization & table schemas
 └── .gitignore            # Excludes node_modules & environmental secrets
 ```
-
+---
 ## ⚡ Getting Started Locally
 
 ### 1. Clone the Repository
@@ -74,7 +74,7 @@ In a new terminal window, navigate to the frontend directory:
    npm install
    npm run dev
 ```
-
+---
 ## 🔐 Environment Variables
 ```text
 Ensure your production environment variables are configured in your hosting providers:
@@ -86,7 +86,7 @@ DB_NAME          Database Name              Render / Railway
 DB_PORT         Connection Port             Render / Railway
 ```
 
-
+---
 ## 📜 License
 ```text
 This project is open-source and available under the MIT License.
