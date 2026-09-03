@@ -90,7 +90,7 @@ export default function FailedPayments() {
                     <tr key={item.id} className="border-secondary">
                       <td className="small" style={{ color: '#94a3b8' }}>#{item.id}</td>
                       <td>
-                        <div className="fw-semibold text-white">{item.customerName}</div>
+                        <div className="fw-semibold text-black">{item.customerName}</div>
                         <div className="small" style={{ color: '#94a3b8' }}>{item.customerEmail}</div>
                       </td>
                       <td className="fw-bold text-white">₹{Number(item.amount).toLocaleString('en-IN')}</td>
