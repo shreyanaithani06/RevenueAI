@@ -14,7 +14,7 @@ export default function Recovery() {
     try {
       setLoading(true);
       const res = await getPriorityQueue();
-      // Supports array directly or res.data response payload
+
       const data = res?.data || res || [];
       setQueue(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -29,7 +29,7 @@ export default function Recovery() {
     try {
       await triggerRecoveryAction(paymentId, actionType);
       setActionStatus({ id: paymentId, message: `Successfully executed ${actionType}!`, type: 'success' });
-      fetchRecoveryQueue(); // Refresh queue data
+      fetchRecoveryQueue(); 
     } catch (error) {
       setActionStatus({ id: paymentId, message: `Failed to execute action.`, type: 'danger' });
     }

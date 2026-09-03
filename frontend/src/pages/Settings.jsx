@@ -4,7 +4,6 @@ export default function Settings() {
   const [activeTab, setActiveTab] = useState("guardrails");
   const [saved, setSaved] = useState(false);
 
-  // Form State
   const [settings, setSettings] = useState({
     maxRetryAttempts: 3,
     autoRetryScoreThreshold: 75,

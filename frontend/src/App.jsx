@@ -38,7 +38,6 @@ export default function App() {
     <Router>
       <MainLayout>
         <Routes>
-          {/* Merchant Command Center Routes (Sidebar + Navbar Visible) */}
           <Route path="/" element={<Dashboard />} />
           <Route path="/failed-payments" element={<FailedPayments />} />
           <Route path="/recovery" element={<Recovery />} />

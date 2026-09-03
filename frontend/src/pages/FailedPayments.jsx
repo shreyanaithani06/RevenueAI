@@ -23,7 +23,7 @@ export default function FailedPayments() {
     }
   };
 
-  // 1. Filter based on user search term
+
   const filteredPayments = payments.filter((p) => {
   const search = searchTerm.toLowerCase();
   const name = (p.customerName || p.customer_name || p.name || '').toLowerCase();
@@ -39,11 +39,11 @@ export default function FailedPayments() {
   );
 });
 
-  // 2. Sort so RECOVERED payments always appear at the top
+
   const sortedPayments = [...filteredPayments].sort((a, b) => {
     if (a.status === "RECOVERED" && b.status !== "RECOVERED") return -1;
     if (a.status !== "RECOVERED" && b.status === "RECOVERED") return 1;
-    return 0; // retain default order for same statuses
+    return 0; 
   });
 
   return (

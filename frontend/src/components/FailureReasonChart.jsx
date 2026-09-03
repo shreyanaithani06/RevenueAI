@@ -11,7 +11,7 @@ const data = [
 export default function FailureReasonChart() {
   return (
     <div className="card border-0 shadow-sm bg-white p-3 h-100">
-      {/* High-Contrast Heading */}
+      
       <h5 className="card-title fw-bold mb-3" style={{ color: '#0f172a' }}>
         <i className="bi bi-pie-chart-fill text-primary me-2"></i>Failure Reason Breakdown
       </h5>

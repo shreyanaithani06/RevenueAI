@@ -8,6 +8,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'MOCK_KEY');
 /**
  * Analyzes a failed transaction and generates recovery intelligence using Gemini AI
  */
+
 async function analyzeFailedPayment(paymentData) {
   try {
     if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === 'your_gemini_api_key_here') {

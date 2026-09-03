@@ -21,7 +21,6 @@ export default function AiRecommendationBanner({ onRunRecovery }) {
       }}
     >
       <div className="card-body p-4">
-        {/* Top Badges Row - Scaled down so badges never overpower the heading */}
         <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
           <div className="d-flex align-items-center gap-2">
             <span 

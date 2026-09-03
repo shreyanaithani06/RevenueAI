@@ -37,7 +37,7 @@ export default function PriorityQueueTable({ payments, onExecuteAction }) {
             </tr>
           </thead>
           <tbody>
-            {/* Iterating over ALL records from MySQL without .slice() restrictions */}
+            
             {payments.map((row) => (
               <tr key={row.id}>
                 <td className="fw-bold text-secondary">#{row.id}</td>

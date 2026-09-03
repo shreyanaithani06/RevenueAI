@@ -9,7 +9,7 @@ export default function CustomerPortal() {
   const handleRetry = async () => {
     setStatus('PROCESSING');
 
-    // Make live API call to update payment status in MySQL
+    // Makes live API call to update payment status in MySQL
     const res = await executeRecoveryAction(paymentId || 1, 'UPDATE_PAYMENT_METHOD');
 
     if (res.success) {

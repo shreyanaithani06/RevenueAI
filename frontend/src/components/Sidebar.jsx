@@ -31,7 +31,7 @@ export default function Sidebar() {
         ))}
       </ul>
 
-      {/* Bottom Settings Link (mt-auto pushes it to the bottom) */}
+      {/* Bottom Settings Link */}
       <div className="mt-auto pt-3 border-top">
         <NavLink
           to="/settings"

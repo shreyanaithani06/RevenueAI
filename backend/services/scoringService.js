@@ -24,7 +24,7 @@ function calculateRecoveryScore(paymentData) {
     score += 5; // Lower values auto-retry with higher success
   }
 
-  // Ensure score stays within [0, 100] bounds
+  
   const finalScore = Math.max(0, Math.min(100, score));
 
   let recommendedAction = 'NO_ACTION';

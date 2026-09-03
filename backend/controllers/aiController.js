@@ -1,12 +1,11 @@
 const { analyzeFailedPayment } = require('../services/aiAgentService');
 const { calculateRecoveryScore } = require('../services/scoringService');
 
-// Analyze individual payment failure
+
 exports.analyzePayment = async (req, res, next) => {
   try {
     const paymentData = req.body;
     
-    // Combine rule-based score calculation with Gemini AI analysis
     const ruleScore = calculateRecoveryScore(paymentData);
     const aiInsight = await analyzeFailedPayment(paymentData);
 
@@ -23,7 +22,7 @@ exports.analyzePayment = async (req, res, next) => {
   }
 };
 
-// Return system-wide failure macro insights
+
 exports.getMacroInsights = async (req, res, next) => {
   try {
     res.json([
